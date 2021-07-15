@@ -125,10 +125,8 @@ nav {
 
 .about{
     color: #000;
-    height: 400px ;
+    height: 500px ;
     position: relative;
-    
-   
 }
 
 .aboutTitle{
@@ -226,8 +224,8 @@ font-weight: bolder;
 
 
 @media screen and (max-width: 768px) {
-    #navLinks{
-       display: none;
+    .link{
+        font-size: 12px;
     }
     .heroTitle{
         font-size: 20px;
