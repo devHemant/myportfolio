@@ -178,11 +178,53 @@ height: 500px;
 color: #fff;
 }
 
-.myWork{
 
+.workCard{
+    height: 400px;
 }
-.workHead{
-    height: 500px;
+.card{
+    background: #000;
+    padding: 25px;
+    margin: 10px 20px;
+    width: 25%;
+    float: left;
+    height: 300px;
+    margin: 1rem;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card p {
+    margin-top: 114px;
+    font-size: 30px;
+}
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+.workCard a {
+    text-decoration: none;
+    color: #fff;
+}
+.card.geoLocation{
+  background-image: url("cardGeoLocationBG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card.imageSlides{
+  background-image: url("cardDargDropBG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card.todoList{
+  background-image: url("cardTodoListBG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .contactMe{
 background-image: url("contact-image-bg.jpg");
@@ -261,6 +303,17 @@ font-weight: bolder;
         font-size: 20px;
         text-align: center;
         margin: -25px;
+    }
+    .card {
+        float: none;
+        height: 70px;
+        margin: 1rem;
+        width: 78%;
+        border-radius: 10px;
+    }
+    .card p {
+        margin-top: 34px;
+        font-size: 20px;
     }
     .socialButton {
         height: 50px;

@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.geoLocationContainer{
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid #ececec;
+    background-color: #cbfa5ab8;
+}
+
+.geoLocationTable{
+    width: 50%;
+}
+.geoAction button {
+    border: 2px solid #c5c1c1;
+    margin-top: 10px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+.geoAction button:hover{
+    
+    color: #ffa38a;
+}

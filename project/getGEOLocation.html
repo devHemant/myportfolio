@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geo Location</title>
+    <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body>
-    
-    <input type="button" value="Get Location" onclick="getLocation()">
+    <div class="geoLocationContainer">
+        <center>
+            <h2>Get your Latitude and Longitude </h2>
+            <table border="1" class="geoLocationTable">
+                <tr>
+                    <th>Longitude</th>
+                    <th>Latitude</th>
+                </tr>
+                <tr>
+                    <td id="longitudeId" align="center">0.0000</td>
+                    <td id="latitudeId"  align="center">0.0000</td>
+                </tr>
+            </table>
+            <div class="geoAction">
+                <button onclick="getLocation()">
+                    <strong>Get Location</strong>
+                </button>
+                <button  onclick="reset()">
+                    <strong>Reset</strong>
+                </button>
+            </div>
+        </center>
+
+    </div>
+
 
     <script>
-        function getLocation(){
-            if(navigator.geolocation){
+        function getLocation() {
+            if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition, errorHandler)
-            }else{
+            } else {
                 alert('Sorry browser is not compatiable');
             }
         }
-        function showPosition(position){
+        function showPosition(position) {
             var latitude = position.coords.latitude;
             var longitude = position.coords.longitude;
+             document.getElementById("latitudeId").innerHTML=latitude;
+             document.getElementById("longitudeId").innerHTML=longitude;
+        }
+        function reset(){
+            document.getElementById("latitudeId").innerHTML='0.0000';
+             document.getElementById("longitudeId").innerHTML='0.0000';
+        }
 
-            alert('latitude: '+ latitude+', longitude: '+ longitude);
-         }
-
-         function errorHandler(err){
-             if(err.code==1){
-                 alert('aceess denied');
-             }else{
-                 alert('position is unavailable');
-             }
-         }
+        function errorHandler(err) {
+            if (err.code == 1) {
+                alert('aceess denied');
+            } else {
+                alert('position is unavailable');
+            }
+        }
 
     </script>
 
 
 </body>
+
 </html>
