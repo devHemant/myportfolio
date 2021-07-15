@@ -149,13 +149,6 @@ nav {
      height: 100%;
  }
 
-@media screen and (min-width: 768px) {
-    .description {
-        width: 60%;
-        position:absolute;
-        left: 60%;
-    }
-}
 .myImage{
     background-image: url("mypic.jpg");
     background-position: center;
@@ -230,6 +223,68 @@ font-weight: bolder;
     text-align: center;
     padding-top: 20px;
 }
+
+
+@media screen and (max-width: 768px) {
+    #navLinks{
+       display: none;
+    }
+    .heroTitle{
+        font-size: 20px;
+      
+      }
+      .heroSubTitle{
+          font-size: 16px;
+      }
+      .about {
+        color: #000;
+        height: 600px;
+        position: relative;
+    }
+    .aboutInfo {
+        position: initial;
+    }
+    .imageContainer {
+        position: absolute;
+        left: 30%;
+        height: auto;
+    }
+    .myImage {
+        height: 150px;
+        width: 150px;
+    }
+    .description {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        right: 10%;
+    }
+    .description p {
+        font-size: 20px;
+        text-align: center;
+        margin: -25px;
+    }
+    .socialButton {
+        height: 50px;
+        width: 80px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .description {
+        width: 60%;
+        position:absolute;
+        left: 60%;
+    }
+}
+
+
+
+
+
+
+
 /* .skillSet{
     
     color: #000;
