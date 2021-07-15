@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="button" value="Get Location" onclick="getLocation()">
+
+    <script>
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition, errorHandler)
+            }else{
+                alert('Sorry browser is not compatiable');
+            }
+        }
+        function showPosition(position){
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+
+            alert('latitude: '+ latitude+', longitude: '+ longitude);
+         }
+
+         function errorHandler(err){
+             if(err.code==1){
+                 alert('aceess denied');
+             }else{
+                 alert('position is unavailable');
+             }
+         }
+
+    </script>
+
+
+</body>
+</html>
