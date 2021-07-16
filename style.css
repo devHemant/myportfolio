@@ -1,9 +1,13 @@
-body {
-    margin: 0px;
-    padding: 0px;
+ * {
     box-sizing: border-box;
-    /* background-color: #fff4c8; */
-}
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
 #container {
     height: auto;
     font-size: 16px;
@@ -133,6 +137,7 @@ nav {
     margin-top: 0px;
     margin-bottom: 20px;
     padding-top: 10px;
+    font-weight: bolder;
 }
 .aboutInfo{
     position: absolute;
@@ -153,8 +158,8 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 100% ;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-color: black;
     float: left;
 }
@@ -163,30 +168,63 @@ nav {
 }
 .description p {
     text-align: left;
-     font-size: 20px;
-     font-family: cursive;
+    font-size: 17px;
+    line-height: 2;
     margin: -32px;
-
 }
 .mySkills{
-background-color: #000;
-margin: 0px;
-padding: 1px;
+    background-image: url("skillsBG.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 1px;
 }
 .skillHead{
-height: 500px;
-color: #fff;
+color: #000;
+text-transform: uppercase;
+font-weight: bolder;
 }
+
+.skillCardBox{
+    margin: 10px 0px;
+}
+.skillCardBox a{
+    text-decoration: none;
+    color: #fff;
+}
+.skillCard {
+    display: inline-block;
+    background: #a97777;
+    margin: 10px 20px;
+    width: 15%;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgb(0 0 0 / 25%), -5px -5px 30px 7px rgb(0 0 0 / 22%);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.skillCard p {
+    text-transform: uppercase;
+}
+  .skillCard:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
 
 
 .workCard{
     height: 400px;
 }
+.workHead{
+    font-weight: bolder;
+}
 .card{
     background: #000;
     padding: 25px;
     margin: 10px 20px;
-    width: 25%;
+    width: 30%;
     float: left;
     height: 300px;
     margin: 1rem;
@@ -228,7 +266,7 @@ color: #fff;
 }
 .contactMe{
 background-image: url("contact-image-bg.jpg");
-height: 150px;
+height: 200px;
 color: #fff;
  text-align: center;
  padding: 15px;
@@ -259,9 +297,9 @@ font-weight: bolder;
 #footer{
     color: #fff;
     background-color: #000;
-    height: 30px;
+    height: 35px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 
@@ -278,7 +316,7 @@ font-weight: bolder;
       }
       .about {
         color: #000;
-        height: 600px;
+        height: 560px;
         position: relative;
     }
     .aboutInfo {
@@ -300,15 +338,22 @@ font-weight: bolder;
         right: 10%;
     }
     .description p {
-        font-size: 20px;
-        text-align: center;
-        margin: -25px;
+        font-size: 13px;
+        text-align: left;
+        margin: 0px;
+    }
+    .skillCard {
+        display: block;
+        width: auto;
+    }
+    .skillCard p {
+        display: inline-block;
     }
     .card {
         float: none;
-        height: 70px;
+        height: 120px;
         margin: 1rem;
-        width: 78%;
+        width: 90%;
         border-radius: 10px;
     }
     .card p {

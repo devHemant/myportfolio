@@ -6,13 +6,14 @@ body{
     width: 100vw;
     height: 100vh;
     border: 2px solid #ececec;
-    background-color: #cbfa5ab8;
+    background-image: url("../skillsBG.jpg");
 }
 
 .geoLocationTable{
     width: 50%;
 }
 .geoAction button {
+    border-radius: 40px;
     border: 2px solid #c5c1c1;
     margin-top: 10px;
     padding: 10px;
@@ -24,6 +25,6 @@ body{
     cursor: pointer;
 }
 .geoAction button:hover{
-    
-    color: #ffa38a;
+    background: #6C205F;
+    color: #fff;
 }
