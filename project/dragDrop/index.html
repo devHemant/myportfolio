@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPL Auction - 2021</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="renderPLayers()">
+  <div class="container">
+    <div class="horizontal-slider-container">
+      <h1 class="heading">IPL Player Auction - 2021</h1>
+
+      <ul class="horizonal-slider">
+        <li class="item">
+          <div class="mi" ondrop="drop(event,'mi')" ondragover="allowDrop(event)"></div>
+          <div class="team-status" id="mi-team-count">Team Players Count : 0</div>
+        </li>
+        <li class="item">
+          <div class="kkr" ondrop="drop(event,'kkr')" ondragover="allowDrop(event)"></div>
+          <div class="team-status" id="kkr-team-count">Team Players Count : 0</div>
+        </li>
+        <li class="item">
+          <div class="csk" ondrop="drop(event,'csk')" ondragover="allowDrop(event)"></div>
+          <div class="team-status" id="csk-team-count">Team Players Count : 0</div>
+        </li>
+        <li class="item">
+          <div class="rcb" ondrop="drop(event,'rcb')" ondragover="allowDrop(event)"></div>
+          <div class="team-status" id="rcb-team-count">Team Players Count : 0</div>
+        </li>
+        <li class="item">
+          <div class="punjab" ondrop="drop(event,'punjab')" ondragover="allowDrop(event)"></div>
+          <div class="team-status" id="punjab-team-count">Team Players Count : 0</div>
+        </li>
+        <li class="item">
+          <div class="delhi" ondrop="drop(event,'delhi')" ondragover="allowDrop(event)"></div>
+          <div class="team-status" id="delhi-team-count">Team Players Count : 0</div>
+        </li>
+        <li class="item">
+          <div class="srh" ondrop="drop(event,'srh')" ondragover="allowDrop(event)"></div>
+          <div class="team-status" id="srh-team-count">Team Players Count : 0</div>
+        </li>
+        <li class="item">
+          <div class="rr" ondrop="drop(event,'rr')" ondragover="allowDrop(event)"></div>
+          <div class="team-status" id="rr-team-count">Team Players Count : 0</div>
+        </li>
+      </ul>
+
+      <hr />
+
+      <ul class="horizonal-slider" id="PlayersRow"></ul>
+    </div>
+  </div>
+  <script>
+    const playersArray = [
+      {
+        id: "1",
+        name: "MS Dhoni",
+        runs: "4669",
+        sr: "136.64",
+        wicket: "0",
+        image: 'dhoni.jpg'
+      },
+      {
+        id: "2",
+        name: "Virat Kohli",
+        runs: "6076	",
+        sr: "130.41",
+        wicket: "4",
+        image: 'virat.webp'
+
+      },
+      {
+        id: "3",
+        name: "AB de Villiers",
+        runs: "5056",
+        sr: "152.38",
+        wicket: "0",
+        image: 'abd.jfif'
+
+      },
+      {
+        id: "4",
+        name: "Bhuvneshwar Kumar",
+        runs: "200",
+        sr: "96.15",
+        wicket: "139",
+        image: 'bhuvneswar.jfif'
+
+      },
+      {
+        id: "5",
+        name: "Hardik Pandya",
+        runs: "1401",
+        sr: "157.24",
+        wicket: "42",
+        image: 'hardik.jfif'
+
+      },
+      {
+        id: "6",
+        name: "Kane Williamson",
+        runs: "1747",
+        sr: "134.18",
+        wicket: "0",
+        image: 'williamson.jpg'
+
+      },
+      {
+        id: "7",
+        name: "Andre Russell",
+        runs: "1680",
+        sr: "179.3",
+        wicket: "68",
+        image: 'russel.jfif'
+
+      },
+      {
+        id: "8",
+        name: "Rohit Sharma",
+        runs: "5480",
+        sr: "130.51",
+        wicket: "15",
+        image: 'rohit.jpg'
+
+      },
+      {
+        id: "9",
+        name: "Eoin Morgan",
+        runs: "1364",
+        sr: "125.25",
+        wicket: "0",
+        image: 'morgan.jpg'
+
+      },
+      {
+        id: "10",
+        name: "Rishabh Pant",
+        runs: "2292",
+        sr: "149.8",
+        wicket: "0",
+        image: 'pant.webp'
+
+      },
+      {
+        id: "11",
+        name: "Kieron Pollard",
+        runs: "3191",
+        sr: "150.87",
+        wicket: "63",
+        image: 'pollard.jfif'
+
+      },
+      {
+        id: "12",
+        name: "KL Rahul",
+        runs: "2978",
+        sr: "135.86",
+        wicket: "0",
+        image: 'rahul.jpeg'
+
+      }
+
+    ];
+    let miTeam = [];
+    let kkrTeam = [];
+    let cskTeam = [];
+    let rcbTeam = [];
+    let punjabTeam = [];
+    let delhiTeam = [];
+    let srhTeam = [];
+    let rrTeam = [];
+    function renderPLayers() {
+      let playerCard = "";
+      playersArray.forEach(function printPlayer(player) {
+        playerCard =
+          playerCard +
+          `<li class="item">
+            <img src="./images/${player.image}" id="${player.id}" ondragstart="drag(event)" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h2><b>${player.name}</b></h2>
+                <p>Runs : ${player.runs}</p> 
+                <p>SR : ${player.sr}</p> 
+                <p>Wicket: ${player.wicket}</p>
+              </div>
+          </li>`;
+      });
+      document.getElementById("PlayersRow").innerHTML = playerCard;
+    }
+    function allowDrop(event) {
+      event.preventDefault();
+    }
+    function drag(event) {
+      event.dataTransfer.setData("playerId", event.target.id);
+    }
+    function getPlayerObj(playerId) {
+      return playersArray.find(function (player, index) {
+        if (player.id === playerId)
+          return true;
+      });
+
+    }
+    function updateTeams(teamName) {
+
+      switch (teamName) {
+        case 'mi':
+          document.getElementById("mi-team-count").innerHTML = `Team Players Count : ${miTeam.length}`;
+          break;
+        case 'kkr':
+          document.getElementById("kkr-team-count").innerHTML = `Team Players Count : ${kkrTeam.length}`;
+          break;
+        case 'csk':
+          document.getElementById("csk-team-count").innerHTML = `Team Players Count : ${cskTeam.length}`;
+          break;
+        case 'rcb':
+          document.getElementById("rcb-team-count").innerHTML = `Team Players Count : ${rcbTeam.length}`;
+          break;
+        case 'punjab':
+          document.getElementById("punjab-team-count").innerHTML = `Team Players Count : ${punjabTeam.length}`;
+          break;
+        case 'delhi':
+          document.getElementById("delhi-team-count").innerHTML = `Team Players Count : ${delhiTeam.length}`;
+          break;
+        case 'srh':
+          document.getElementById("srh-team-count").innerHTML = `Team Players Count : ${srhTeam.length}`;
+          break;
+        case 'rr':
+          document.getElementById("rr-team-count").innerHTML = `Team Players Count : ${rrTeam.length}`;
+          break;
+
+        default:
+          return;
+
+      }
+
+    }
+    function drop(event, teamName) {
+      let playerId = event.dataTransfer.getData("playerId");
+      let playerObj = getPlayerObj(playerId);
+      switch (teamName) {
+        case 'mi':
+          if (miTeam.length <=10) {
+            miTeam.push(playerObj)
+            updateTeams('mi');
+            document.getElementById(playerId).parentElement.style.display = 'none';
+
+          } else {
+            alert("Opps! Mumbai Indian Team is full");
+          }
+
+          break;
+        case 'kkr':
+          if (kkrTeam.length <=10) {
+
+            kkrTeam.push(playerObj);
+            updateTeams('kkr');
+            document.getElementById(playerId).parentElement.style.display = 'none';
+
+          } else {
+            alert("Opps! Kolkata Kinght Rider Team is full");
+          }
+          break;
+        case 'csk':
+          if (cskTeam.length <=10) {
+
+            cskTeam.push(playerObj);
+            updateTeams('csk');
+            document.getElementById(playerId).parentElement.style.display = 'none';
+
+          } else {
+            alert("Opps! Chenai Supper King Team is full");
+          }
+          break;
+        case 'rcb':
+          if (rcbTeam.length <=10) {
+            rcbTeam.push(playerObj);
+            updateTeams('rcb');
+            document.getElementById(playerId).parentElement.style.display = 'none';
+
+          } else {
+            alert("Opps! Royal Challengers Banagalore Team is full");
+          }
+          break;
+        case 'punjab':
+          if (punjabTeam.length <=10) {
+
+            punjabTeam.push(playerObj);
+            updateTeams('punjab');
+            document.getElementById(playerId).parentElement.style.display = 'none';
+
+          } else {
+            alert("Opps! Punjab Kings Team is full");
+          }
+          break;
+        case 'delhi':
+          if (delhiTeam.length <=10) {
+
+            delhiTeam.push(playerObj);
+            updateTeams('delhi');
+            document.getElementById(playerId).parentElement.style.display = 'none';
+
+          } else {
+            alert("Opps! Delhi Capital Team is full");
+          }
+          break;
+        case 'srh':
+          if (srhTeam.length <=10) {
+
+            srhTeam.push(playerObj);
+            updateTeams('srh');
+            document.getElementById(playerId).parentElement.style.display = 'none';
+
+          } else {
+            alert("Opps! Sunriser Hydrabad Team is full");
+          }
+          break;
+        case 'rr':
+          if (rrTeam.length <=10) {
+
+            rrTeam.push(playerObj);
+            updateTeams('rr');
+            document.getElementById(playerId).parentElement.style.display = 'none';
+
+          } else {
+            alert("Opps! Rajastan Royal Team is full");
+          }
+          break;
+
+        default:
+          return;
+
+      }
+
+    }
+  </script>
+</body>
+
+</html>

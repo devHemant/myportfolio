@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+:root {
+  --gutter: 20px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #e6e9ec;
+  font: 400 0.875rem/1.25rem Roboto, Arial, sans-serif;
+  letter-spacing: 0.0142857143em;
+  color: #3c4043;
+  overflow: auto;
+}
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+.horizonal-slider {
+  padding: 0;
+  width: 100vw;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.horizontal-slider-container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.item {
+  padding: calc(var(--gutter) / 2 * 1.5);
+  scroll-snap-align: center;
+  display: inline-block;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  width: 20%;
+  margin: 0px 10px;
+  height: 400px;
+}
+.item .mi {
+  background-image: url("./images/ipl-team-mi.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95%;
+}
+.item .kkr {
+  background-image: url("./images/ipl-team-kkr.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95%;
+}
+.item .csk {
+  background-image: url("./images/ipl-team-csk.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95%;
+}
+.item .rcb {
+  background-image: url("./images/ipl-team-rcb.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95%;
+}
+.item .punjab {
+  background-image: url("./images/ipl-team-punjab.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95%;
+}
+.item .delhi {
+  background-image: url("./images/ipl-team-delhi.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95%;
+}
+.item .srh {
+  background-image: url("./images/ipl-team-srh.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95%;
+}
+.item .rr {
+  background-image: url("./images/ipl-team-RR.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95%;
+}
+.item .team-status {
+  padding: 5px 0px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+article {
+  background-color: white;
+  display: block;
+  position: relative;
+}
+article h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 600;
+  color: #323232;
+}
+article h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #7f7f7f;
+}
+/* article .info {
+
+    div {
+      text-align: center;
+      width: 33%;
+
+      span {
+        display: block;
+
+        &:nth-of-type(1) {
+          font-weight: bold;
+          font-size: 24px;
+          @include margin(null null 5px null);
+          color: #323232;
+        }
+
+        &:nth-of-type(2) {
+          font-size: 12px;
+          text-transform: uppercase;
+          color: #7f7f7f;
+          letter-spacing: 0.5px;
+        }
+      } */
