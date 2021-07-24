@@ -14,7 +14,7 @@
 
 <body onload="showContainer()">
     <div class="container mt-5">
-        <div id="myProfileInfoBox" class="d-none">
+        <div id="myProfileInfoBox">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card mb-3">
@@ -179,7 +179,7 @@
 
 
         <!-- Sign UP Container -->
-        <div class="row d-none" id="signUpBox">
+        <div class="row" id="signUpBox">
             <div class="d-flex justify-content-center allign-items-center">
                 <div class="card w-70">
                     <div class="card-body">
@@ -266,6 +266,7 @@
             document.getElementById("signUpBox").style.display = "none";
         }
         function showContainer() {
+
             let isLogin = JSON.parse(localStorage.getItem('isLogin'));
             let user = JSON.parse(localStorage.getItem('user'));
             if (isLogin && user) {
