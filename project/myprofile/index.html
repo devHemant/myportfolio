@@ -14,38 +14,6 @@
 
 <body onload="showContainer()">
     <div class="container mt-5">
-
-         <!-- Sign IN Container -->
-         <div class="row" id="signInBox">
-            <div class="d-flex justify-content-center allign-items-center">
-                <div class="card w-75">
-                    <div class="card-body">
-                        <h4 class="text-center">Sign In!</h4>
-                        <h6 class="text-danger text-sm" id="signInErrorMessage"></h6>
-                        <form id="signInForm">
-                            <div class="form-group">
-                                <input type="Email" class="form-control" name="email" placeholder="Email" />
-                            </div>
-                            <div class="form-group">
-                                <input type="Password" class="form-control" name="password" placeholder="Password" />
-                            </div>
-                            <!-- <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" name="remeber me">Remember me
-                            </div> -->
-                            <button type="submit" class="btn btn-primary btn-block rounded-pill">Sign In</button>
-                            <hr />
-                            <div class="text-sm text-center">
-                                New on Site? <a href="#" class="text-decoration-none" onclick="showSignUp()"> Sign
-                                    Up</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
         <div id="myProfileInfoBox">
             <div class="row">
                 <div class="col-lg-4">
@@ -180,7 +148,36 @@
         </div>
 
 
-       
+        <!-- Sign IN Container -->
+        <div class="row" id="signInBox">
+            <div class="d-flex justify-content-center allign-items-center">
+                <div class="card w-50">
+                    <div class="card-body">
+                        <h4 class="text-center">Sign In!</h4>
+                        <h6 class="text-danger text-sm" id="signInErrorMessage"></h6>
+                        <form id="signInForm">
+                            <div class="form-group">
+                                <input type="Email" class="form-control" name="email" placeholder="Email" />
+                            </div>
+                            <div class="form-group">
+                                <input type="Password" class="form-control" name="password" placeholder="Password" />
+                            </div>
+                            <!-- <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" name="remeber me">Remember me
+                            </div> -->
+                            <button type="submit" class="btn btn-primary btn-block rounded-pill">Sign In</button>
+                            <hr />
+                            <div class="text-sm text-center">
+                                New on Site? <a href="#" class="text-decoration-none" onclick="showSignUp()"> Sign
+                                    Up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Sign UP Container -->
         <div class="row" id="signUpBox">
             <div class="d-flex justify-content-center allign-items-center">
