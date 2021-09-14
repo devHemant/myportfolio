@@ -1,217 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body id="home">
+  <body id="home">
     <div id="container">
-        <nav id="navBar">
+      <nav id="navBar">
+        <div id="navLogo">
+          <h2 id="logo">HK</h2>
+        </div>
+        <div id="navLinks">
+          <ul class="uList">
+            <li class="list"><a class="link" href="#home">HOME</a></li>
+            <li class="list"><a class="link" href="#aboutMe">ABOUT</a></li>
+            <li class="list"><a class="link" href="#skills">SKILLS</a></li>
+            <li class="list"><a class="link" href="#work">WORK</a></li>
+            <li class="list">
+              <a class="link" href="#social-contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main id="main">
+        <section class="heroContainer">
+          <div class="heroInfo">
+            <div class="heroTitle">Hi! I'm Hemant Kumar</div>
+            <div class="heroSubTitle">Full Stack Web Developer</div>
+            <br />
 
-            <div id="navLogo">
-                <h2 id="logo">HK</h2>
+            <div class="borderResume">
+              <a href="Hemant_Kumar_Resume.pdf" target="_blank">
+                <button>
+                  <strong>RESUME</strong>
+                </button>
+              </a>
             </div>
-            <div id="navLinks">
-                <ul class="uList">
-                    <li class="list"><a class="link" href="#home">HOME</a></li>
-                    <li class="list"><a class="link" href="#aboutMe">ABOUT</a></li>
-                    <li class="list"><a class="link" href="#skills">SKILLS</a></li>
-                    <li class="list"><a class="link" href="#work">WORK</a></li>
-                    <li class="list"><a class="link" href="#social-contact">CONTACT</a></li>
-                </ul>
+          </div>
+        </section>
+
+        <section class="about" id="aboutMe">
+          <h2 class="aboutTitle">ABOUT ME</h2>
+          <div class="aboutInfo">
+            <div class="imageContainer">
+              <div class="myImage"></div>
             </div>
-        </nav>
-        <main id="main">
-            <section class="heroContainer">
-                <div class="heroInfo">
-                    <div class="heroTitle">Hi! I'm Hemant Kumar</div>
-                    <div class="heroSubTitle">Full Stack Web Developer</div>
-                    <br>
+            <div class="description">
+              <p>
+                A Doer, a Dreamer, and a Thinker. I see possibility everywhere
+                and in every situation. Positive outlook towards life believes
+                in being a ray of hope to everyone who comes across. Ambitious,
+                honest hardworking, punctual and disciplined in every action.
+                Good in understanding and implementation of Single page
+                applications with new technologies. Possesses good communication
+                skills, analytical problem solving, leading and learning skills
+                as well as keen interest in the emerging technologies, excellent
+                team player.
+              </p>
+            </div>
+          </div>
+        </section>
 
-                    <div class="borderResume">
-                        <a href="Hemant_Kumar_Resume.pdf" target="_blank">
-                            <button>
-                                <strong>RESUME</strong>
-                            </button>
-                        </a>
-                    </div>
+        <section class="section" id="skills">
+          <div class="mySkills">
+            <div class="skillSets">
+              <h2 class="skillHead">SKILL SET</h2>
 
+              <div class="skillCardBox">
+                <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+                  <div class="skillCard">
+                    <p>Html</p>
+                  </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
+                  <div class="skillCard">
+                    <p>Css</p>
+                  </div>
+                </a>
+                <a
+                  href="https://en.wikipedia.org/wiki/JavaScript"
+                  target="_blank"
+                >
+                  <div class="skillCard">
+                    <p>JavaScript</p>
+                  </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/GIT" target="_blank">
+                  <div class="skillCard">
+                    <p>Git</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="learningSkillSets">
+              <h2 class="skillHead">Learning SKILL SET</h2>
+
+              <div class="skillCardBox">
+                <a
+                  href="https://en.wikipedia.org/wiki/React_(JavaScript_library)"
+                  target="_blank"
+                >
+                  <div class="skillCard">
+                    <p>REACT JS</p>
+                  </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">
+                  <div class="skillCard">
+                    <p>NODE JS</p>
+                  </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/MongoDB" target="_blank">
+                  <div class="skillCard">
+                    <p>MONGODB</p>
+                  </div>
+                </a>
+                <a
+                  href="https://en.wikipedia.org/wiki/Express.js"
+                  target="_blank"
+                >
+                  <div class="skillCard">
+                    <p>EXPRESS JS</p>
+                  </div>
+                </a>
+              </div>
+              <div class="skillCardBox">
+                <a
+                  href="https://en.wikipedia.org/wiki/Amazon_Web_Services"
+                  target="_blank"
+                >
+                  <div class="skillCard">
+                    <p>AWS</p>
+                  </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Docker" target="_blank">
+                  <div class="skillCard">
+                    <p>docker</p>
+                  </div>
+                </a>
+                <a
+                  href="https://en.wikipedia.org/wiki/Jenkins_(software)"
+                  target="_blank"
+                >
+                  <div class="skillCard">
+                    <p>jenkins</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="work">
+          <div class="myWork">
+            <h2 class="workHead">WORK</h2>
+
+            <div class="workCard">
+              <a href="/project/geoLocation/index.html" target="_blank">
+                <div class="card geoLocation">
+                  <p>Geo Location</p>
                 </div>
-            </section>
-
-            <section class="about" id="aboutMe">
-                <h2 class="aboutTitle">ABOUT ME</h2>
-                <div class="aboutInfo">
-                    <div class="imageContainer">
-                        <div class="myImage"></div>
-                    </div>
-                    <div class="description">
-                        <p>A Doer, a Dreamer, and a Thinker. I see possibility everywhere and in every situation.
-                            Positive outlook towards life believes in being a ray of hope to everyone who comes across.
-                            Ambitious, honest hardworking, punctual and disciplined in every action.
-                            Good in understanding and implementation of Single page applications with new technologies.
-                            Possesses good communication skills, analytical problem solving, leading and learning skills
-                            as well as keen interest in the emerging technologies, excellent team player.</p>
-                    </div>
+              </a>
+              <a href="/project/dragDrop/index.html" target="_blank">
+                <div class="card imageSlides">
+                  <p>Drag and Drop</p>
                 </div>
-            </section>
-
-            <section class="section" id="skills">
-                <div class="mySkills">
-                    <div class="skillSets">
-                        <h2 class="skillHead">SKILL SET</h2>
-
-                        <div class="skillCardBox">
-                            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
-                                <div class="skillCard">
-                                    <p>Html</p>
-                                </div>
-                            </a>
-                            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
-                                <div class="skillCard">
-                                    <p>Css</p>
-                                </div>
-                            </a>
-                            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
-                                <div class="skillCard">
-                                    <p>JavaScript</p>
-                                </div>
-                            </a>
-                            <a href="https://en.wikipedia.org/wiki/GIT" target="_blank">
-                                <div class="skillCard">
-                                    <p>Git</p>
-                                </div>
-                            </a>
-                        </div>
-
-
-                    </div>
-                    <div class="learningSkillSets">
-                        <h2 class="skillHead">Learning SKILL SET</h2>
-
-                        <div class="skillCardBox">
-                            <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank">
-                                <div class="skillCard">
-                                    <p>REACT JS</p>
-                                </div>
-                            </a>
-                            <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">
-                                <div class="skillCard">
-                                    <p>NODE JS</p>
-                                </div>
-                            </a>
-                            <a href="https://en.wikipedia.org/wiki/MongoDB" target="_blank">
-                                <div class="skillCard">
-                                    <p>MONGODB</p>
-                                </div>
-                            </a>
-                            <a href="https://en.wikipedia.org/wiki/Express.js" target="_blank">
-                                <div class="skillCard">
-                                    <p>EXPRESS JS</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="skillCardBox">
-                            <a href="https://en.wikipedia.org/wiki/Amazon_Web_Services" target="_blank">
-                                <div class="skillCard">
-                                    <p>AWS</p>
-                                </div>
-                            </a>
-                            <a href="https://en.wikipedia.org/wiki/Docker" target="_blank">
-                                <div class="skillCard">
-                                    <p>docker</p>
-                                </div>
-                            </a>
-                            <a href="https://en.wikipedia.org/wiki/Jenkins_(software)" target="_blank">
-                                <div class="skillCard">
-                                    <p>jenkins</p>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
+              </a>
+              <a
+                href="https://my-profile-react-app.herokuapp.com/"
+                target="_blank"
+              >
+                <div class="card todoList">
+                  <p>My Profile APP</p>
                 </div>
-            </section>
-
-            <section id="work">
-                <div class="myWork">
-                    <h2 class="workHead">WORK</h2>
-
-
-                    <div class="workCard">
-                        <a href="/project/geoLocation/index.html" target="_blank">
-                            <div class="card geoLocation">
-                                <p>Geo Location</p>
-                            </div>
-                        </a>
-                        <a href="/project/dragDrop/index.html" target="_blank">
-                            <div class="card imageSlides">
-                                <p>Drag and Drop</p>
-
-
-                            </div>
-                        </a>
-                        <a href="https://my-profile-react-app.herokuapp.com/" target="_blank">
-                            <div class="card todoList">
-
-                                <p>My Profile APP</p>
-
-
-                            </div>
-                        </a>
-                    </div>
-
+              </a>
+              <a
+                href="https://grocery-react-app.herokuapp.com/"
+                target="_blank"
+              >
+                <div class="card groceryApp">
+                  <p>Grocery APP</p>
                 </div>
-            </section>
+              </a>
+            </div>
+          </div>
+        </section>
 
-            <section>
-                <div class="contactMe">
-                    <h2 class="contactHead">DO YOU WANT TO KNOW MORE ABOUT ME?</h2>
-                    <p class="contactSubhead">CONTACT ME</p>
-                </div>
-            </section>
+        <section>
+          <div class="contactMe">
+            <h2 class="contactHead">DO YOU WANT TO KNOW MORE ABOUT ME?</h2>
+            <p class="contactSubhead">CONTACT ME</p>
+          </div>
+        </section>
 
-            <section id="social-contact">
-                <div class="list-social-group">
-                    <div class="socialButton">
-                        <a class="list-group-item" href="https://www.instagram.com/hemant017/" target="_blank"><i
-                                class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="socialButton">
-                        <a class="list-group-item" href="https://www.linkedin.com/in/hemant-kumar-055427217/"
-                            target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="socialButton">
-                        <a class="list-group-item" href="https://github.com/devHemant" target="_blank"><i
-                                class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="socialButton">
-                        <a class="list-group-item" href="mailto:info.hemantkumar17@gmail.com" target="_blank"><i
-                                class="fa fa-google fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                </div>
+        <section id="social-contact">
+          <div class="list-social-group">
+            <div class="socialButton">
+              <a
+                class="list-group-item"
+                href="https://www.instagram.com/hemant017/"
+                target="_blank"
+                ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div class="socialButton">
+              <a
+                class="list-group-item"
+                href="https://www.linkedin.com/in/hemant-kumar-055427217/"
+                target="_blank"
+                ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div class="socialButton">
+              <a
+                class="list-group-item"
+                href="https://github.com/devHemant"
+                target="_blank"
+                ><i class="fa fa-github fa-2x" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div class="socialButton">
+              <a
+                class="list-group-item"
+                href="mailto:info.hemantkumar17@gmail.com"
+                target="_blank"
+                ><i class="fa fa-google fa-2x" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </main>
 
-            </section>
-
-
-        </main>
-
-
-
-        <footer id="footer">
-            @2021, Developed by Hemant Kumar
-        </footer>
+      <footer id="footer">@2021, Developed by Hemant Kumar</footer>
     </div>
     <div id="hero"></div>
-
-</body>
-
+  </body>
 </html>

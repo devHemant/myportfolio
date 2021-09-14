@@ -1,376 +1,373 @@
- * {
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-  }
-  html, body {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  }
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 #container {
-    height: auto;
-    font-size: 16px;
-    font-family: sans-serif;
-    text-align: center;
+  height: auto;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: center;
 }
 nav {
-    height: 80px;
-    width: 100%;
-    background-color: black;
-    text-align: center;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
 }
-#navBar, #main, #footer {
-    width: 100%;
+#navBar,
+#main,
+#footer {
+  width: 100%;
 }
 
 #navBar {
-    background-color: #000;
-    color: #fff ;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 #navLogo {
-    padding-left: 10px;
-    float: left;
+  padding-left: 10px;
+  float: left;
 }
 
-#logo{
-    border: 2px solid #fff;
-    padding: 5px 10px;
-
+#logo {
+  border: 2px solid #fff;
+  padding: 5px 10px;
 }
-#navLinks{
-    float: right;
-    margin-top: 10px;
+#navLinks {
+  float: right;
+  margin-top: 10px;
 }
-.uList{
-    padding: 5px 10px;
+.uList {
+  padding: 5px 10px;
 }
-.list{
-    display: inline;
-    margin-left: 5px ;
-
+.list {
+  display: inline;
+  margin-left: 5px;
 }
-.link{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 .link:hover {
-    color: #ffa38a;
-    
+  color: #ffa38a;
 }
 
 .heroContainer {
-    background-image: url("herocontainer-bg.jpg");
-    /* background-image: url("photo-bg.jfif"); */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 50vw;
-    
+  background-image: url("herocontainer-bg.jpg");
+  /* background-image: url("photo-bg.jfif"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 50vw;
 }
 
-.heroInfo{
-    color: #fff;
-    position: relative;
-    top: -50%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
+.heroInfo {
+  color: #fff;
+  position: relative;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-.heroTitle{
+.heroTitle {
   text-align: center;
   padding-top: 35vw;
   background-color: transparent;
   font-size: 30px;
-
 }
-.heroSubTitle{
-    text-align: center;
-    background-color: transparent;
-    font-size: 20px;
-    margin:  10px 0px;
+.heroSubTitle {
+  text-align: center;
+  background-color: transparent;
+  font-size: 20px;
+  margin: 10px 0px;
 }
-.borderResume a{
-    color: #fff;
-    text-decoration: none;
-
+.borderResume a {
+  color: #fff;
+  text-decoration: none;
 }
-.borderResume button{
-    border: 2px solid #c5c1c1;
-    padding: 10px;
-    width: 120px;
-    height: 50px;
-    background-color: transparent;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
+.borderResume button {
+  border: 2px solid #c5c1c1;
+  padding: 10px;
+  width: 120px;
+  height: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
 }
-.borderResume button:hover{
-    
-    color: #ffa38a;
+.borderResume button:hover {
+  color: #ffa38a;
 }
 
-.about{
-    color: #000;
-    height: 500px ;
-    position: relative;
+.about {
+  color: #000;
+  height: 500px;
+  position: relative;
 }
 
-.aboutTitle{
-    margin-top: 0px;
-    margin-bottom: 20px;
-    padding-top: 10px;
-    font-weight: bolder;
+.aboutTitle {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  font-weight: bolder;
 }
-.aboutInfo{
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    right: 25%;
+.aboutInfo {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  right: 25%;
+}
+.imageContainer {
+  width: 40%;
+  height: 100%;
+}
 
-    
+.myImage {
+  background-image: url("mypic.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  float: left;
 }
- .imageContainer {
-     width: 40%;
-     height: 100%;
- }
-
-.myImage{
-    background-image: url("mypic.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 100% ;
-    height: 250px;
-    width: 250px;
-    background-color: black;
-    float: left;
-}
-.description{
-    float: right;  
+.description {
+  float: right;
 }
 .description p {
-    text-align: left;
-    font-size: 17px;
-    line-height: 2;
-    margin: -32px;
+  text-align: left;
+  font-size: 17px;
+  line-height: 2;
+  margin: -32px;
 }
-.mySkills{
-    background-image: url("skillsBG.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0px;
-    padding: 1px;
+.mySkills {
+  background-image: url("skillsBG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 1px;
 }
-.skillHead{
-color: #000;
-text-transform: uppercase;
-font-weight: bolder;
+.skillHead {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
-.skillCardBox{
-    margin: 10px 0px;
+.skillCardBox {
+  margin: 10px 0px;
 }
-.skillCardBox a{
-    text-decoration: none;
-    color: #fff;
+.skillCardBox a {
+  text-decoration: none;
+  color: #fff;
 }
 .skillCard {
-    display: inline-block;
-    background: #a97777;
-    margin: 10px 20px;
-    width: 15%;
-    border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgb(0 0 0 / 25%), -5px -5px 30px 7px rgb(0 0 0 / 22%);
-    cursor: pointer;
-    transition: 0.4s;
+  display: inline-block;
+  background: #a97777;
+  margin: 10px 20px;
+  width: 15%;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgb(0 0 0 / 25%),
+    -5px -5px 30px 7px rgb(0 0 0 / 22%);
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .skillCard p {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-  .skillCard:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
+.skillCard:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
 
-
-.workCard{
-    height: 400px;
+.workCard {
+  height: 400px;
 }
-.workHead{
-    font-weight: bolder;
+.workHead {
+  font-weight: bolder;
 }
-.card{
-    background: #000;
-    padding: 25px;
-    margin: 10px 20px;
-    width: 30%;
-    float: left;
-    height: 300px;
-    margin: 1rem;
-    border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    cursor: pointer;
-    transition: 0.4s;
+.card {
+  background: #000;
+  padding: 25px;
+  margin: 10px 20px;
+  width: 22%;
+  float: left;
+  height: 300px;
+  margin: 1rem;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
 }
 .card p {
-    margin-top: 114px;
-    font-size: 30px;
+  margin-top: 114px;
+  font-size: 30px;
 }
 .card:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-.workCard a {
-    text-decoration: none;
-    color: #fff;
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
-.card.geoLocation{
+.workCard a {
+  text-decoration: none;
+  color: #fff;
+}
+.card.geoLocation {
   background-image: url("cardGeoLocationBG.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.card.imageSlides{
+.card.imageSlides {
   background-image: url("cardDargDropBG.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.card.todoList{
+.card.todoList {
   background-image: url("cardTodoListBG.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.contactMe{
-background-image: url("contact-image-bg.jpg");
-height: 200px;
-color: #fff;
- text-align: center;
- padding: 15px;
+.card.groceryApp {
+  background-image: url("grocery.jfif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card.comingSoon {
+  background-image: url("comingSoon.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactMe {
+  background-image: url("contact-image-bg.jpg");
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
 }
 
-.contactSubhead{
-font-size: 40px;
-font-weight: bolder;
+.contactSubhead {
+  font-size: 40px;
+  font-weight: bolder;
 }
 
-.list-social-group{
-    display: inline-block;
-    margin: 20px 0px;
-    padding: 30px 0px;
+.list-social-group {
+  display: inline-block;
+  margin: 20px 0px;
+  padding: 30px 0px;
 }
 
-.socialButton{
-    display: inline-block;
-    background-color: #fff;
-    height: 100px;
-    width: 100px;
+.socialButton {
+  display: inline-block;
+  background-color: #fff;
+  height: 100px;
+  width: 100px;
 }
-.socialButton a{
-    text-decoration: none;
-    color: #000;
-}
-
-#footer{
-    color: #fff;
-    background-color: #000;
-    height: 35px;
-    text-align: center;
-    padding-top: 10px;
+.socialButton a {
+  text-decoration: none;
+  color: #000;
 }
 
+#footer {
+  color: #fff;
+  background-color: #000;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+}
 
 @media screen and (max-width: 768px) {
-    .link{
-        font-size: 12px;
-    }
-    .heroTitle{
-        font-size: 20px;
-      
-      }
-      .heroSubTitle{
-          font-size: 16px;
-      }
-      .about {
-        color: #000;
-        height: 560px;
-        position: relative;
-    }
-    .aboutInfo {
-        position: initial;
-    }
-    .imageContainer {
-        position: absolute;
-        left: 30%;
-        height: auto;
-    }
-    .myImage {
-        height: 150px;
-        width: 150px;
-    }
-    .description {
-        position: absolute;
-        top: 40%;
-        left: 10%;
-        right: 10%;
-    }
-    .description p {
-        font-size: 13px;
-        text-align: left;
-        margin: 0px;
-    }
-    .skillCard {
-        display: block;
-        width: auto;
-    }
-    .skillCard p {
-        display: inline-block;
-    }
-    .card {
-        float: none;
-        height: 120px;
-        margin: 1rem;
-        width: 90%;
-        border-radius: 10px;
-    }
-    .card p {
-        margin-top: 34px;
-        font-size: 20px;
-    }
-    .socialButton {
-        height: 50px;
-        width: 80px;
-    }
-
+  .link {
+    font-size: 12px;
+  }
+  .heroTitle {
+    font-size: 20px;
+  }
+  .heroSubTitle {
+    font-size: 16px;
+  }
+  .about {
+    color: #000;
+    height: 560px;
+    position: relative;
+  }
+  .aboutInfo {
+    position: initial;
+  }
+  .imageContainer {
+    position: absolute;
+    left: 30%;
+    height: auto;
+  }
+  .myImage {
+    height: 150px;
+    width: 150px;
+  }
+  .description {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+  }
+  .description p {
+    font-size: 13px;
+    text-align: left;
+    margin: 0px;
+  }
+  .skillCard {
+    display: block;
+    width: auto;
+  }
+  .skillCard p {
+    display: inline-block;
+  }
+  .card {
+    float: none;
+    height: 120px;
+    margin: 1rem;
+    width: 90%;
+    border-radius: 10px;
+  }
+  .card p {
+    margin-top: 34px;
+    font-size: 20px;
+  }
+  .socialButton {
+    height: 50px;
+    width: 80px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .description {
-        width: 60%;
-        position:absolute;
-        left: 60%;
-    }
+  .description {
+    width: 60%;
+    position: absolute;
+    left: 60%;
+  }
 }
-
-
-
-
-
-
 
 /* .skillSet{
     
@@ -379,12 +376,6 @@ background-color: #ffa38a;
 position: relative;
 top: 0%
 } */
-
-
-
-
-
-
 
 /* nav {
     height: 270px;
@@ -425,4 +416,3 @@ top: 0%
     text-decoration: none;
     color: #fff;
 } */
-
